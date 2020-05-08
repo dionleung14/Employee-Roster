@@ -1,9 +1,39 @@
 body {
-  background-color: teal;
+  background-color: rgb(92, 199, 199);
 }
 
 .clickableHeader{
   cursor: pointer;
+}
+
+.unclickableHeader{
+  cursor: not-allowed;
+}
+
+h1 {
+  text-align: center; 
+}
+
+h3 {
+  text-align: center; 
+  width: 60%;
+  margin: auto;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input {
+  width: 20%;
+  margin: 20px auto;
+  align-items: center;
+}
+
+.table {
+  width: 70%;
+  margin: auto;
+  border: 1px black solid;
 }
 
 .App {

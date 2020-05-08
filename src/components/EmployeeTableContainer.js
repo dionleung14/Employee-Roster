@@ -27,7 +27,7 @@ class EmployeeTable extends Component {
     this.setState({
       searchName: event.target.value,
       displayMethod: event.target.value.length ? "search" : "default",
-      sortCategory: ""
+      sortCategory: "",
     });
   };
 
@@ -157,11 +157,6 @@ class EmployeeTable extends Component {
         default:
           break;
       }
-      // workingArr = this.sortFunction(this.state.sortCategory)
-      // this.state.employees.sort(function(a, b){
-      //   if (a.name.first < b.name.first) {return -1;}
-      //   if (b.name.first < a.name.first) {return 1;}
-      // });
     } else {
       workingArr = this.state.employees;
     }
@@ -181,7 +176,9 @@ class EmployeeTable extends Component {
         <table className="table">
           <thead className="thead-dark">
             <tr>
-              <th scope="col">Photo</th>
+              <th className="unclickableHeader" scope="col">
+                Photo
+              </th>
               <th
                 className="clickableHeader"
                 scope="col"
@@ -198,7 +195,9 @@ class EmployeeTable extends Component {
               >
                 Last Name
               </th>
-              <th scope="col">Phone Number</th>
+              <th className="unclickableHeader" scope="col">
+                Phone Number
+              </th>
               <th
                 className="clickableHeader"
                 scope="col"
